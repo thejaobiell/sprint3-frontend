@@ -1,0 +1,22 @@
+# Dependências do Node.js
+node_modules/
+
+# Diretórios de compilação/saída
+dist/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Sistemas de pacotes
+.yarn/
+.pnp.*
