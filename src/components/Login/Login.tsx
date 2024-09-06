@@ -14,16 +14,6 @@ const Login = () => {
                 <label htmlFor="txtCNH_CPF_RG">
                     <h4>CNH/CPF/RG:</h4>
                     <br />
-                    <label>
-                        <input type="radio" name="entrarcom" id="entrarcomCPF" value="CNH" /> CNH
-                    </label>
-                    <label>
-                        <input type="radio" name="entrarcom" id="entrarcomCNH" value="CPF" /> CPF
-                    </label>
-                    <label>
-                        <input type="radio" name="entrarcom" id="entrarcomRG" value="RG" /> RG
-                    </label>
-                    <br />
                     <input type="text" id="txtCNH_CPF_RG" name="txtCNH_CPF_RG" placeholder="Digite o CNH ou CPF ou RG" />
                 </label>
                 <br />
