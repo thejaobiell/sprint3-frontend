@@ -7,6 +7,7 @@ footer{
 
 @media (max-width: 767px) {
     footer {
+        height: auto;
         position: relative;
         font-size: 12px;
         font-style: italic;
@@ -42,6 +43,5 @@ footer{
         font-size: 20px;
         font-style: italic;
         font-weight: bold;
-        padding: 20px 0;
     }
 }
