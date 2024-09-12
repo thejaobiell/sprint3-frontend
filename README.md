@@ -9,5 +9,8 @@ Membros:
 
 # O que é necessário instalar?
 É necessário instalar React Router DOM para conseguir ir de página em página.
-  * Para instalar, vá ao terminal --> digite cd Diagnoscar --> npm install --> npm install react-router-dom.
+  * Para instalar, abra o terminal na pasta Diagnoscar --> digite npm install e espere o download terminar --> digite npm install react-router-dom e espere o download terminar.
+
+# Link Video Youtube Demonstração
+
 
