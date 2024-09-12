@@ -1,17 +1,32 @@
+Claro! Aqui está uma versão aprimorada do seu texto:
+
+---
+
 # Diagnoscar
 
-Membros:
+### Integrantes:
+- **João Gabriel Boaventura Marques e Silva** | RM: 554874
+- **Lucas de Melo Pinheiro Pinho** | RM: 558791
+- **Lucas Leal das Chagas** | RM: 551124
 
-  João Gabriel Boaventura Marques e Silva | RM:554874
-  
-  Lucas de Melo Pinheiro Pinho | RM:558791
-  
-  Lucas Leal das Chagas | RM551124
+### Instalações Necessárias
+Para navegar entre diferentes páginas no projeto, será necessário instalar o React Router DOM. Siga os passos abaixo:
 
-# O que é necessário instalar?
-É necessário instalar React Router DOM para conseguir ir de página em página.
-  * Para instalar, abra o terminal na pasta Diagnoscar --> digite npm install e espere o download terminar --> digite npm install react-router-dom e espere o download terminar.
+1. Abra o terminal na pasta do projeto **Diagnoscar**.
+2. Execute o comando:
+   ```bash
+   npm install
+   ```
+   Aguarde a conclusão do download das dependências.
+3. Em seguida, instale o React Router DOM com o comando:
+   ```bash
+   npm install react-router-dom
+   ```
+   Novamente, aguarde até o término do processo de instalação.
 
-# Link Video Youtube Demonstração
+### Demonstração
+Confira a demonstração em vídeo no YouTube através do link abaixo:
 
+[**Link para o vídeo de demonstração no YouTube**](#)
 
+---
