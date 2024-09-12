@@ -2,7 +2,9 @@
 
 Membros:
   João Gabriel Boaventura Marques e Silva | RM:554874
+  
   Lucas de Melo Pinheiro Pinho | RM:558791
+  
   Lucas Leal das Chagas | RM551124
 
 # O que é necessário instalar?
