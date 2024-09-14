@@ -1,5 +1,7 @@
 @media (max-width: 767px) {
     .forms {
+        margin-top: 330px;
+        margin-bottom: 330px;
         padding: 20px;
         box-sizing: border-box;
     }
@@ -50,6 +52,8 @@
     .forms {
         padding: 25px;
         box-sizing: border-box;
+        margin-top: 340px;
+        margin-bottom: 340px;
     }
 
     .forms label {
@@ -98,6 +102,8 @@
         .forms {
             padding: 25px;
             box-sizing: border-box;
+            margin-top: 230px;
+            margin-bottom: 230px;
         }
     
         .forms label {
@@ -144,6 +150,8 @@
 
 @media (min-width: 1200px) {
     .forms {
+        margin-top: 155px;
+        margin-bottom: 155px;
         padding: 25px;
         box-sizing: border-box;
     }
@@ -157,6 +165,7 @@
     section input[type="textarea"],
     section input[type="email"],
     section input[type="date"],
+    section inputmask,
     section textarea {
         width: 100%;
         padding: 8px;
