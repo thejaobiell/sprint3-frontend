@@ -1,5 +1,11 @@
+import { useEffect } from "react";
 import "./Error404.css";
-const erro404 = () => {
+
+const Error404 = () => {
+  useEffect(() => {
+    document.title = "Erro 404 - Página Não Encontrada";
+  }, []);
+
   return (
     <>
       <div className="j">
@@ -11,4 +17,5 @@ const erro404 = () => {
     </>
   );
 };
-export default erro404;
+
+export default Error404;
