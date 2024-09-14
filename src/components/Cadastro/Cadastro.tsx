@@ -1,41 +1,145 @@
+import { useNavigate } from "react-router-dom";
 import "./Cadastro.css"; 
+import { useEffect } from 'react';
+import InputMask from 'react-input-mask';
+
 const Cadastro = () => {
+    useEffect(() => {
+        document.title = "Cadastro - Diagnoscar";
+    }, []);
 
-return (
-    <>
-    <section className="forms">
-    <form>
-        <label> Nome Completo: <br /> <input type="text" name="txtNome" id="txtNome" placeholder="Digite seu nome" /> </label>
+    const navigate = useNavigate();
+    const logino = () => {
+        navigate('/login');
+    };
 
-        <label> Data de nascimento: <br /> <input type="date" name="txtDataNascimento" id="txtNASCIMENTO" min="1900-01-01" max="2006-12-31" /> </label>
+    return (
+        <>
+            <section className="forms">
+                <form>
+                    <label> Nome Completo: <br /> 
+                        <input 
+                            type="text" 
+                            name="txtNome" 
+                            id="txtNome" 
+                            placeholder="Digite seu nome" 
+                        /> 
+                    </label>
 
-        <label>
-        Sexo:
-        <label> <input type="radio" name="rdoSEXO" id="rdoSEXOM" value="M" />{" "} Masculino </label>
+                    <label> Data de nascimento: <br /> 
+                        <input 
+                            type="date" 
+                            name="txtDataNascimento" 
+                            id="txtNASCIMENTO" 
+                            min="1900-01-01" 
+                            max="2006-12-31" 
+                        /> 
+                    </label>
 
-        <label><input type="radio" name="rdoSEXO" id="rdoSEXOF" value="F" />{" "} Feminino </label>
+                    <label>Sexo:
+                        <label> 
+                            <input 
+                                type="radio" 
+                                name="rdoSEXO" 
+                                id="rdoSEXOM" 
+                                value="M" 
+                            />{" "} Masculino 
+                        </label>
+                        <label>
+                            <input 
+                                type="radio" 
+                                name="rdoSEXO" 
+                                id="rdoSEXOF" 
+                                value="F" 
+                            />{" "} Feminino 
+                        </label>
+                        <label> 
+                            <input 
+                                type="radio" 
+                                name="rdoSEXO" 
+                                id="rdoSEXO0" 
+                                value="O" 
+                            /> Outro 
+                        </label>
+                    </label> <br />
 
-        <label> <input type="radio" name="rdoSEXO" id="rdoSEXO0" value="O" /> Outros </label>
+                    <label>E-Mail: <br /> 
+                        <input 
+                            type="email" 
+                            name="txtEmail" 
+                            id="txtEMAIL" 
+                            placeholder="Digite seu e-mail" 
+                        /> 
+                    </label>
 
-        </label> <br />
+                    <label> CPF: <br />
+                        <InputMask
+                            type="text" 
+                            mask="999.999.999-99"
+                            id="txtCPF"
+                            name="txtcpf"
+                            placeholder="Digite o CPF"
+                            maxLength={15}
+                        />
+                    </label>
 
-        <label>E-Mail: <br /> <input type="email" name="txtEmail" id="txtEMAIL" placeholder="Digite seu e-mail"/> </label>
+                    <label> CNH: <br />
+                        <input
+                            type="text" 
+                            id="txtCNH"
+                            name="txtcnh"
+                            placeholder="Digite a CNH"
+                        />
+                    </label>
 
-        <label>Cpf: <br /> <input type="text" id="txtCPF" name="txtcpf" placeholder="Digite o CPF"/> </label>
+                    <label>RG: <br /> 
+                        <InputMask
+                            mask="99.999.999-"
+                            type="text" 
+                            id="txtRG" 
+                            name="txtrg" 
+                            placeholder="Digite o RG" 
+                        /> 
+                    </label>
 
-        <label>RG: <br /> <input type="text" id="txtRG" name="txtrg" placeholder="Digite o RG"/> </label>
+                    <label> Celular: <br />
+                        <InputMask
+                            type="text" 
+                            mask="(99) 99999-9999"
+                            id="txtCEL"
+                            name="txtCEL"
+                            placeholder="Digite o número de Celular"
+                        />
+                    </label>
 
-        <label>Cnh: <br /> <input type="text" id="txtCNH" name="txtcnh" placeholder="Digite o Cnh"/> </label>
+                    <label>Endereço: <br />
+                        <textarea
+                            id="txtEndereco"
+                            name="endereco"
+                            placeholder="Rua, Número, Bairro, Cidade, Estado e CEP (Exemplo: Rua das Flores, 123, Bairro Jardim Primavera, São Paulo, São Paulo, 01000-000)"
+                            rows={5}
+                        />
+                    </label> <br />
 
-        <label>Celular: <br /> <input type="text" id="txtCEL" name="txtCEL" placeholder="Digite o número de Celular"/> </label>
+                        <label>Digite as informações do carro (Use / para separa os automoveís ): <br /> 
+                        <input 
+                            type="text" 
+                            name="txtNome" 
+                            id="txtNome" 
+                            placeholder="Placa, Marca, Modelo e Ano" 
+                        /> 
+                    </label>
 
-        <label>Endereço: <textarea name="comentarios" placeholder="Digite o Rua, Número, Bairro, Cidade e Estado. (Nesta Ordem)"></textarea> </label> <br />
-
-        <input type="button" value="Cadastrar" id="botao"/>
-    </form>
-    </section>
-    </>
-);
+                    <input 
+                        type="button" 
+                        value="Cadastrar" 
+                        id="botao" 
+                        onClick={logino}
+                    />
+                </form>
+            </section>
+        </>
+    );
 }
 
 export default Cadastro;
