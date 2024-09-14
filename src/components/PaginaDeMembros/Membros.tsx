@@ -1,5 +1,12 @@
+import { useEffect } from "react";
 import "./Membros.css";
+
 const Membros = () => {
+    useEffect(() => {
+        document.title = "Página de Membros - Diagnoscar";
+    }, []);
+
+
 return (
         <>
         <section className="membros-container">
