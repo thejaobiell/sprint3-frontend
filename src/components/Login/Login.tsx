@@ -1,6 +1,21 @@
+import { useEffect } from 'react';
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    useEffect(() => {
+        document.title = "Login - Diagnoscar";
+    }, []);
+
+    const navigate = useNavigate();
+    const loginou = () => {
+    navigate('/escolhacarro');
+    };
+    const cadastrar = () => {
+    navigate('/cadastro');
+    };
+    
+
     return (
         <section>
             <form id="LOGIN">
@@ -17,12 +32,9 @@ const Login = () => {
                     <input type="text" id="txtCNH_CPF_RG" name="txtCNH_CPF_RG" placeholder="Digite o CNH ou CPF ou RG" />
                 </label>
                 <br />
-                <button id="botao">
-                    <a href="iniciar.html">Entrar</a>
-                </button>
-                <button id="botao">
-                    <a href="cadastro.html">Fazer Cadastro</a>
-                </button>
+                <button id="botao" onClick={loginou}>Entrar</button>
+
+                <button id="botao" onClick={cadastrar}>Fazer Cadastro</button>
             </form>
         </section>
     );
