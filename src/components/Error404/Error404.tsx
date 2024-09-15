@@ -9,8 +9,8 @@ const Error404 = () => {
   return (
     <>
       <div className="j">
-        <h1 className="a">Erro 404</h1>
-        <h2 className="b">
+        <h1 className="error">Erro 404</h1>
+        <h2 className="mensagem">
           Ops! Infelizmente a página que você tentou acessar não existe.
         </h2>
       </div>

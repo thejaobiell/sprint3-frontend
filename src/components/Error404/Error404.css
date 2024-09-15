@@ -8,11 +8,11 @@ text-align: center;
 background-color: #f4f4f4; 
 }
 
-.a {
+.error {
 font-size: 4rem;
 margin-bottom: 1rem;
 }
 
-.b {
+.mensagem {
 font-size: 1.5rem;
 }
