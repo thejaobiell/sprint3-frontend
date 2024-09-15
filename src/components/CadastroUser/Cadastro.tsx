@@ -121,7 +121,7 @@ const Cadastro = () => {
                         />
                     </label> <br />
 
-                        <label>Digite as informações do carro (Use / para separa os automoveís ): <br /> 
+                        <label>Digite as informações do carro (Use / para separa os automoveís) : <br /> 
                         <input 
                             type="text" 
                             name="txtNome" 
