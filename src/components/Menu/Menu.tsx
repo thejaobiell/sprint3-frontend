@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import './Menu.css';
+import styles from './Menu.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
@@ -9,23 +9,21 @@ const Menu = () => {
 
     const navigate = useNavigate();
     const loginou = () => {
-    navigate('/login');
+        navigate('/login');
     };
 
     return (
-        <>
-            <section className="sectionMenu">
-                <div className="fundoContainer">
-                    <img className="fundo" src="/img/fundo.png" alt="Foto de Fundo" />
-                    <article className="botaoEtexto">
-                        <h1 className='texto'>
-                            A inteligência artificial da Porto Seguro que irá fazer um pré-diagnóstico do seu carro antes dele ir para oficina
-                        </h1>
-                        <button className="botao" onClick={loginou}>Iniciar Pré-Diagnóstico</button>
-                    </article>
-                </div>
-            </section>
-        </>
+        <section className={styles.sectionMenu}>
+            <div className={styles.fundoContainer}>
+                <img className={styles.fundo} src="/img/fundo.png" alt="Foto de Fundo" />
+                <article className={styles.botaoEtexto}>
+                    <h1 className={styles.texto}>
+                        A inteligência artificial da Porto Seguro que irá fazer um pré-diagnóstico do seu carro antes dele ir para oficina
+                    </h1>
+                    <button className={styles.botao} onClick={loginou}>Iniciar Pré-Diagnóstico</button>
+                </article>
+            </div>
+        </section>
     );
 };
 

@@ -1,4 +1,4 @@
-.chat-container {
+.chatContainer {
     position: fixed;
     top: 0;
     right: 0;
@@ -12,13 +12,13 @@
     flex-direction: column;
 }
 
-.chat-box {
+.chatBox {
     flex: 1;
     padding: 10px;
     overflow-y: auto;
 }
 
-.fechar-chat {
+.fecharChat {
     background: #ff0000;
     color: #fff;
     border: none;
@@ -27,8 +27,45 @@
     text-align: center;
 }
 
+.informacoes,
+.descricao,
+.preDiagnostico {
+    margin-bottom: 20px;
+    height: 129px;
+}
+
+.informacoes p,
+.descricao p,
+.preDiagnostico p {
+    margin: 8px 0;
+}
+
+.botao {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: 3px solid #B6B6B6;
+    background: #009FE3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px 0 10px;
+    display: block;
+}
+
+.botao:hover {
+    background: #0077B6;
+}
+
+.duplabotao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media (max-width: 767px) {
-    .chat-container {
+    .chatContainer {
         width: 100%;
         height: 100%;
         top: 0;
@@ -38,7 +75,7 @@
         box-shadow: none;
     }
 
-    .fechar-chat {
+    .fecharChat {
         background: #ff0000;
         color: #fff;
         border: none;
@@ -46,76 +83,47 @@
         cursor: pointer;
         text-align: center;
     }
-}
 
     .informacoes,
     .descricao,
-    .pre-diagnostico {
-        margin-bottom: 20px;
-        height: 129px;
+    .preDiagnostico {
+        height: auto;
     }
 
     .informacoes p,
     .descricao p,
-    .pre-diagnostico p {
+    .preDiagnostico p {
         margin: 8px 0;
     }
 
     .botao {
-        width: 100%;
         height: 50px;
-        border-radius: 20px;
-        border: 3px solid #B6B6B6;
-        background: #009FE3;
-        color: #fff;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        margin: 15px 0 10px;
-        display: block;
+        font-size: 14px;
+        padding: 8px;
     }
-
-    .botao:hover {
-        background: #0077B6;
-    }
-
-    .duplabotao {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
 
     .informacoes,
     .descricao,
-    .pre-diagnostico {
+    .preDiagnostico {
         margin-bottom: 25px;
         height: 111px;
     }
 
     .informacoes p,
     .descricao p,
-    .pre-diagnostico p {
+    .preDiagnostico p {
         margin: 9px 0;
     }
 
     .botao {
-        width: 100%;
         height: 55px;
         border-radius: 22px;
         border: 4px solid #B6B6B6;
-        background: #009FE3;
-        color: #fff;
         font-size: 17px;
-        font-weight: bold;
-        cursor: pointer;
         margin: 18px 0 12px;
-        display: block;
-    }
-
-    .botao:hover {
-        background: #0077B6;
     }
 
     .duplabotao {
@@ -129,33 +137,23 @@
 
     .informacoes,
     .descricao,
-    .pre-diagnostico {
+    .preDiagnostico {
         margin-bottom: 30px;
         height: 129px;
     }
 
     .informacoes p,
     .descricao p,
-    .pre-diagnostico p {
+    .preDiagnostico p {
         margin: 10px 0;
     }
 
     .botao {
-        width: 100%;
         height: 60px;
         border-radius: 25px;
         border: 4px solid #B6B6B6;
-        background: #009FE3;
-        color: #fff;
         font-size: 18px;
-        font-weight: bold;
-        cursor: pointer;
         margin: 20px 0 12px;
-        display: block;
-    }
-
-    .botao:hover {
-        background: #0077B6;
     }
 
     .duplabotao {
@@ -169,40 +167,23 @@
 
     .informacoes,
     .descricao,
-    .pre-diagnostico {
+    .preDiagnostico {
         margin-bottom: 30px;
         height: 111px;
-                margin-left: 20px;
+        margin-left: 20px;
     }
 
     .informacoes p,
     .descricao p,
-    .pre-diagnostico p {
+    .preDiagnostico p {
         margin: 10px 0;
-
     }
 
     .botao {
-        width: 100%;
         height: 60px;
         border-radius: 25px;
         border: 4px solid #B6B6B6;
-        background: #009FE3;
-        color: #fff;
         font-size: 18px;
-        font-weight: bold;
-        cursor: pointer;
         margin: 20px 0 12px;
-        display: block;
-    }
-
-    .botao:hover {
-        background: #0077B6;
-    }
-    
-    .duplabotao {
-        display: flex;
-        justify-content: space-between;
-        gap: 12px;
     }
 }

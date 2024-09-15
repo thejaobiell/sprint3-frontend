@@ -1,24 +1,20 @@
 import { useNavigate } from 'react-router-dom';
-import "./ObrigadoPorUsar.css"
+import styles from './ObrigadoPorUsar.module.css';
 
-
-const ObrigadoPorUsar= () => {
-        const navigate = useNavigate();
+const ObrigadoPorUsar = () => {
+    const navigate = useNavigate();
 
     const voltarMenu = () => {
         navigate('/menu');
     };
 
     return (
-        <>
-        <div className='thanks'>
-            <h1 className='titulo'>Obrigado por usar a DIAGNOSCAR!</h1>
-            <button className='botao' onClick={voltarMenu}>
+        <div className={styles.thanks}>
+            <h1 className={styles.titulo}>Obrigado por usar a DIAGNOSCAR!</h1>
+            <button className={styles.botao} onClick={voltarMenu}>
                 Voltar ao Menu
             </button>
         </div>
-        </>
-
     );
 };
 

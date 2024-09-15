@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
-import "./RelatorioDiagnoscar.css";
+import styles from './RelatorioDiagnoscar.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const RelatorioDiagnoscar = () => {
-
     const navigate = useNavigate();
+
     const chamarGuincho = () => {
-    navigate('/envioGuincho');
+        navigate('/envioGuincho');
     };
+
     const oficinasParceiras = () => {
-    navigate('/*');
+        navigate('/OficinasPerto');
     };
 
     useEffect(() => {
@@ -23,42 +24,42 @@ const RelatorioDiagnoscar = () => {
 
     return (
         <>
-            <div className="informacoes">
+            <div className={styles.informacoes}>
                 <h2>Informações: </h2>
-                <h4>            Marca: XXXXX</h4>
+                <h4>Marca: XXXXX</h4>
                 <h4>Modelo: xxxxxx</h4>
                 <h4>Ano: 0000</h4>
             </div>
 
-            <div className="descricao">
+            <div className={styles.descricao}>
                 <h2>Descrição do Problema:</h2>
                 <p>...</p>
             </div>
 
-            <div className="pre-diagnostico">
+            <div className={styles.preDiagnostico}>
                 <h1>Pré-diagnóstico:</h1>
                 <p>...</p>
             </div>
 
-            <div className="duplabotao">
-                <button className="botao" onClick={chamarGuincho}>Chamar o Guincho</button>
-                <button className="botao" onClick={oficinasParceiras}>Oficinas Perto de Você</button>
+            <div className={styles.duplabotao}>
+                <button className={styles.botao} onClick={chamarGuincho}>Chamar o Guincho</button>
+                <button className={styles.botao} onClick={oficinasParceiras}>Oficinas Perto de Você</button>
             </div>
 
-            <div className="solobotao">
-                <button className="botao" onClick={alternarChat}>Chat</button>
+            <div className={styles.solobotao}>
+                <button className={styles.botao} onClick={alternarChat}>Chat</button>
             </div>
 
             {mostrarChat && (
-                <div className="chat-container">
-                    <button className="fechar-chat" onClick={alternarChat}>Sair</button>
-                    <div className="chat-box">
+                <div className={styles.chatContainer}>
+                    <button className={styles.fecharChat} onClick={alternarChat}>Sair</button>
+                    <div className={styles.chatBox}>
                         <p>Chat em Desenvolvimento</p>
                     </div>
                 </div>
             )}
         </>
     );
-}
+};
 
 export default RelatorioDiagnoscar;

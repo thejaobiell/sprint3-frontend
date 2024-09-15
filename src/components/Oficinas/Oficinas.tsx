@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './Oficinas.css';
+import styles from './Oficinas.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const Oficinas = () => {
@@ -22,7 +22,7 @@ const Oficinas = () => {
   const handleConfirm = () => {
     if (oficinaSelecionada) {
       alert(`Você escolheu a oficina: ${oficinaSelecionada}`);
-      confirmed(); // Navigate to the next page after confirming selection
+      confirmed();
     } else {
       alert('Por favor, selecione uma oficina.');
     }
@@ -35,9 +35,9 @@ const Oficinas = () => {
   };
 
   return (
-    <div className="containera">
+    <div className={styles.containera}>
       <h1>Escolha uma Oficina</h1>
-      <div className="workshops">
+      <div className={styles.workshops}>
         <label>
           <input
             type="radio"
@@ -69,9 +69,9 @@ const Oficinas = () => {
           Oficina de Design
         </label>
       </div>
-      <div className="botaos1">
-        <button onClick={handleConfirm}>Confirmar</button>
-        <button onClick={handleCancel}>Cancelar</button>
+      <div className={styles.botaos1}>
+        <button className={styles.botao} onClick={handleConfirm}>Confirmar</button>
+        <button className={styles.botao} onClick={handleCancel}>Cancelar</button>
       </div>
     </div>
   );

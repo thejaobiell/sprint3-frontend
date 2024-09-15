@@ -42,15 +42,17 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
     .fundoContainer {
-        display: flex;
-        justify-content: space-between;
-    }
-    .fundo {
+        position: relative;
         display: block;
         width: 100%;
         height: auto;
-        margin-top: 500px;
     }
+
+    .fundo {
+        width: 100%;
+        height: auto;
+    }
+
     .botaoEtexto {
         position: absolute;
         top: 50%;
@@ -58,17 +60,19 @@
         text-align: center;
         color: white;
         transform: translate(-50%, -50%);
+        width: 80%;
+        padding: 20px;
     }
+
     .botaoEtexto h1 {
         font-size: 24px;
-        width: 80%;
-        margin: 0 auto;
-        text-shadow: 
-            -1px -1px 0 black,  
+        text-shadow:
+            -1px -1px 0 black,
             1px -1px 0 black,
             -1px 1px 0 black,
             1px 1px 0 black;
     }
+
     .botao {
         height: 60px;
         border-radius: 25px;
@@ -79,6 +83,7 @@
         font-weight: bold;
         cursor: pointer;
     }
+
     .botao:hover {
         background: #0077B6;
     }

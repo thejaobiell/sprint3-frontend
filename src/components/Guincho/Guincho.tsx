@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import "./Guincho.css";
+import styles from './Guincho.module.css';
 
 const defaultIcon = L.icon({
   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
@@ -51,11 +51,11 @@ const GeolocationApp: React.FC = () => {
   };
 
   return (
-    <div className="container">
+    <div className={styles.container}>
       <h1>Geolocalização do Usuário</h1>
-      <button onClick={getLocation} className='buttons'>Pegar Localização</button>
+      <button onClick={getLocation} className={styles.buttons}>Pegar Localização</button>
       
-      {error && <p className="error">{error}</p>}
+      {error && <p className={styles.error}>{error}</p>}
 
       {location.latitude && location.longitude ? (
         <div>
@@ -65,7 +65,7 @@ const GeolocationApp: React.FC = () => {
           <MapContainer
             center={[location.latitude, location.longitude]}
             zoom={13}
-            className="leaflet-container"
+            className={styles['leaflet-container']}
           >
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -81,10 +81,10 @@ const GeolocationApp: React.FC = () => {
             </Marker>
           </MapContainer>
 
-          <div className="buttons-container">
+          <div className={styles['buttons-container']}>
             <h1>Enviar Guincho ?</h1>
-            <button onClick={confirmado} className='buttons'>Enviar</button>
-            <button onClick={cancelado} className='buttons'>Cancelar</button>
+            <button onClick={confirmado} className={styles.buttons}>Enviar</button>
+            <button onClick={cancelado} className={styles.buttons}>Cancelar</button>
           </div>
         </div>
       ) : (

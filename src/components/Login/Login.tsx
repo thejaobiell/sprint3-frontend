@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import './Login.css';
+import styles from './Login.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -9,16 +9,15 @@ const Login = () => {
 
     const navigate = useNavigate();
     const loginou = () => {
-    navigate('/escolhacarro');
+        navigate('/escolhacarro');
     };
     const cadastrar = () => {
-    navigate('/cadastro');
+        navigate('/cadastro');
     };
-    
 
     return (
-        <section>
-            <form id="LOGIN">
+        <section className={styles.section}>
+            <form id={styles.LOGIN}>
                 <label htmlFor="txtEmail">
                     <h4>Email:</h4>
                     <br />
@@ -32,9 +31,9 @@ const Login = () => {
                     <input type="text" id="txtCNH_CPF_RG" name="txtCNH_CPF_RG" placeholder="Digite o CNH ou CPF ou RG" />
                 </label>
                 <br />
-                <button id="botao" onClick={loginou}>Entrar</button>
+                <button type="button" className={styles.button} onClick={loginou}>Entrar</button>
 
-                <button id="botao" onClick={cadastrar}>Fazer Cadastro</button>
+                <button type="button" className={styles.button} onClick={cadastrar}>Fazer Cadastro</button>
             </form>
         </section>
     );

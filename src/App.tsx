@@ -12,7 +12,6 @@ import Guincho from "./components/Guincho/Guincho";
 import ObrigadoPorUsar from "./components/ObrigadoPorUsar/ObrigadoPorUsar";
 import Oficinas from "./components/Oficinas/Oficinas";
 
-
 function App() {
   return (
     <BrowserRouter>

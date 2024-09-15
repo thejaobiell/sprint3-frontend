@@ -1,7 +1,5 @@
 @media (max-width: 767px) {
     .forms {
-        margin-top: 370px;
-        margin-bottom: 370px;
         padding: 20px;
         box-sizing: border-box;
     }
@@ -21,16 +19,16 @@
         margin-bottom: 10px;
         border: 2px solid #CCCCCC;
         border-radius: 5px;
-        background-color:#F0F0F0;
+        background-color: #F0F0F0;
         font-size: 16px;
         box-sizing: border-box;
     }
 
-    label{
+    label {
         font-weight: bold;
     }
 
-    #botao {
+    .botao {
         width: 200px;
         height: 65px;
         font-size: 16px;
@@ -43,8 +41,9 @@
         margin: 20px 0 10px;
         display: block;
     }
-    #botao:hover {
-        background:#0077B6;
+
+    .botao:hover {
+        background: #0077B6;
     }
 }
 
@@ -52,8 +51,6 @@
     .forms {
         padding: 25px;
         box-sizing: border-box;
-        margin-top: 410px;
-        margin-bottom: 410px;
     }
 
     .forms label {
@@ -80,7 +77,7 @@
         font-weight: bold;
     }
 
-    #botao {
+    .botao {
         width: 200px;
         height: 65px;
         font-size: 16px;
@@ -93,65 +90,63 @@
         margin: 25px 0 12px;
         display: block;
     }
-    #botao:hover {
+
+    .botao:hover {
         background: #0077B6;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-        .forms {
-            padding: 25px;
-            box-sizing: border-box;
-            margin-top: 310px;
-            margin-bottom: 310px;
-        }
-    
-        .forms label {
-            display: block;
-            margin-bottom: 5px;
-        }
-    
-        section input[type="text"],
-        section input[type="textarea"],
-        section input[type="email"],
-        section input[type="date"],
-        section textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 2px solid #CCCCCC;
-            border-radius: 5px;
-            background-color:#F0F0F0;
-            font-size: 14px;
-            box-sizing: border-box;
-        }
-    
-        label{
-            font-weight: bold;
-        }
-    
-        #botao {
-            width: 200px;
-            height: 65px;
-            font-size: 16px;
-            border-radius: 20px;
-            border: 3px solid #B6B6B6;
-            background: #009FE3;
-            color: #fff;
-            font-weight: bold;
-            cursor: pointer;
-            margin: 15px 0 10px;
-            display: block;
-        }
-        #botao:hover {
-            background:#0077B6;
-        }
+    .forms {
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .forms label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    section input[type="text"],
+    section input[type="textarea"],
+    section input[type="email"],
+    section input[type="date"],
+    section textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 2px solid #CCCCCC;
+        border-radius: 5px;
+        background-color: #F0F0F0;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .botao {
+        width: 200px;
+        height: 65px;
+        font-size: 16px;
+        border-radius: 20px;
+        border: 3px solid #B6B6B6;
+        background: #009FE3;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 15px 0 10px;
+        display: block;
+    }
+
+    .botao:hover {
+        background: #0077B6;
+    }
 }
 
 @media (min-width: 1200px) {
     .forms {
-        margin-top: 255px;
-        margin-bottom: 255px;
         padding: 25px;
         box-sizing: border-box;
     }
@@ -181,7 +176,7 @@
         font-weight: bold;
     }
 
-    #botao {
+    .botao {
         width: 200px;
         height: 65px;
         font-size: 16px;
@@ -194,7 +189,8 @@
         margin: 15px 0 10px;
         display: block;
     }
-    #botao:hover {
+
+    .botao:hover {
         background: #0077B6;
     }
 }

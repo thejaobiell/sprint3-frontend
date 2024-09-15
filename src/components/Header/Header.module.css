@@ -51,6 +51,7 @@ nav a:hover {
         position: absolute;
         top: 20px;
         left: 20px;
+        cursor: pointer;
     }
 
     #Diagnoscar {
@@ -76,6 +77,7 @@ nav a:hover {
         position: absolute;
         top: 20px;
         left: 30px;
+        cursor: pointer;
     }
 
     #Diagnoscar {
@@ -102,6 +104,7 @@ nav a:hover {
         position: absolute;
         top: 20px;
         left: 15px;
+        cursor: pointer;
     }
 
     #Diagnoscar {
@@ -127,6 +130,7 @@ nav a:hover {
         position: absolute;
         top: 20px;
         left: 15px;
+        cursor: pointer;
     }
 
     #Diagnoscar {

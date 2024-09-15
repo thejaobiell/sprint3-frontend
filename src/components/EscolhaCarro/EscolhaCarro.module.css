@@ -64,6 +64,11 @@
 }
 
 @media (min-width: 1200px) {
+    .selecao-carro{
+        margin-top: 79px;
+        margin-bottom: 79px;
+    }
+
     .selecao-carro__info {
         text-align: center;
         font-size: 1.2rem;
