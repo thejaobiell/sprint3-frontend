@@ -41,4 +41,9 @@ Confira a demonstração em vídeo no YouTube através do link abaixo:
 
 [**Link para o vídeo de demonstração no YouTube**](https://youtu.be/Vdx-sgPCGM4)
 
+### Caso de algum problema
+Link Google Drive (Backup): [**Link Google Drive**](https://drive.google.com/drive/folders/1RPlvxtSPuGotJZQxGO4o-t8PrK7cUaJf?usp=drive_link)
+
+[**Link GITHUB**](https://github.com/thejaobiell/sprint3-frontend)
+
 ---
