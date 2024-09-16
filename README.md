@@ -39,6 +39,6 @@ Para navegar entre diferentes páginas no projeto, será necessário instalar o 
 ### Demonstração
 Confira a demonstração em vídeo no YouTube através do link abaixo:
 
-[**https://youtu.be/Vdx-sgPCGM4**](#)
+[**Link para o vídeo de demonstração no YouTube**](https://youtu.be/Vdx-sgPCGM4)
 
 ---
