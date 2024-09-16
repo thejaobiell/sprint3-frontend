@@ -22,10 +22,23 @@ Para navegar entre diferentes páginas no projeto, será necessário instalar o 
    npm install react-router-dom
    ```
    Novamente, aguarde até o término do processo de instalação.
+4. Em seguida, instale o Input Mask com o comando:
+   ```bash
+   npm install react-input-mask --save
+   ```
+   Novamente, aguarde até o término do processo de instalação.
+5. E por último, instale o Input Mask com o comando:
+   ```bash
+   npm install leaflet react-leaflet
+   ```
+   Aguarde até o término do processo de instalação e logo em seguida instale:
+      ```bash
+   npm install @types/leaflet
+   ```
 
 ### Demonstração
 Confira a demonstração em vídeo no YouTube através do link abaixo:
 
-[**Link para o vídeo de demonstração no YouTube**](#)
+[**https://youtu.be/Vdx-sgPCGM4**](#)
 
 ---
