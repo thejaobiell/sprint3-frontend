@@ -1,7 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 import styles from './ObrigadoPorUsar.module.css';
+import { useEffect } from 'react';
 
 const ObrigadoPorUsar = () => {
+
+    useEffect(() => {
+    document.title = "Obrigado por usar a Diagnoscar";
+  }, []);
+  
     const navigate = useNavigate();
 
     const voltarMenu = () => {

@@ -14,7 +14,7 @@ const RelatorioDiagnoscar = () => {
     };
 
     useEffect(() => {
-        document.title = "Início do Pré-Diagnóstico";
+        document.title = "Início do Pré-Diagnóstico - Diagnoscar";
     }, []);
 
     const [mostrarChat, setMostrarChat] = useState(false);

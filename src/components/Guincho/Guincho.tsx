@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -15,6 +15,12 @@ const defaultIcon = L.icon({
 });
 
 const GeolocationApp: React.FC = () => {
+
+    useEffect(() => {
+    document.title = "Chamando o Guincho - Diagnoscar";
+  }, []);
+
+
   const [location, setLocation] = useState<{ latitude: number | null; longitude: number | null }>({
     latitude: null,
     longitude: null,
