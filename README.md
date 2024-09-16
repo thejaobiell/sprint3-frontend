@@ -44,6 +44,6 @@ Confira a demonstração em vídeo no YouTube através do link abaixo:
 ### Caso de algum problema
 Link Google Drive (Backup): [**Link Google Drive**](https://drive.google.com/drive/folders/1RPlvxtSPuGotJZQxGO4o-t8PrK7cUaJf?usp=drive_link)
 
-[**Link GITHUB**](https://github.com/thejaobiell/sprint3-frontend)
+Link GIHUB(Repositório): [**Link GITHUB**](https://github.com/thejaobiell/sprint3-frontend)
 
 ---
